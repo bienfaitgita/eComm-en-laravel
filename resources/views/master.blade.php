@@ -25,5 +25,29 @@
         height: 600px;
         padding-top: 100px;
     }
+    img.slider-img{
+        height: 400px !important;
+    }
+    .slide-text{
+        background-color: #35443585 !important;
+    }
+    .trending-image{
+        height: 200px;
+
+    }
+    .trending-item{
+        float: left;
+        width: 20%;
+
+    }
+    .trending-wrapper{
+        margin: 30px;
+    }
+    .detail-img{
+        height: 200px;
+    }
+    .search-box{
+        width: 300px !important;
+    }
 </style>
 </html>
