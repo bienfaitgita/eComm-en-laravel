@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Stripe\Stripe;
+use Stripe\PaymentIntent;
+
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\cart;
@@ -15,6 +18,7 @@ use Symfony\Component\Console\Input\Input;
 
 class ProductController extends Controller
 {
+
     //
     function index()
     {
@@ -103,7 +107,9 @@ class ProductController extends Controller
     }
     function myOrders()
     {
+
         $userId=Session::get('user')['id'];
+
         $orders= DB::table('orders')
         ->join('products','orders.product_id','=','products.id')
         ->where('orders.user_id',$userId)
@@ -111,5 +117,5 @@ class ProductController extends Controller
 
         return view('myorders',['orders'=>$orders]);
     }
-
+   
 }

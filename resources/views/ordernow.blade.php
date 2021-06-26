@@ -31,7 +31,7 @@
             </tbody>
           </table>
           <div>
-            <form action="/orderplace" method="POST">
+            <form action="/index" method="POST">
                 @csrf
                 <div class="form-group">
 
@@ -42,9 +42,9 @@
                   <input type="radio" value="cash" name="payment"><span> Online payment </span><br><br>
                   <input type="radio" value="cash" name="payment"><span> EMI payment </span><br><br>
                   <input type="radio" value="cash" name="payment"><span> Payment on Delivery </span><br><br>
-                </div> 
+                </div>
 
-                <button type="submit" class="btn btn-default">Order Now</button><br><br>
+                <button type="submit" class="btn btn-success">Passez a la caisse</button><br><br>
               </form>
           </div>
 

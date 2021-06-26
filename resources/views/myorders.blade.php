@@ -26,7 +26,7 @@
                         <h6>Address : {{$item->address}}</h6>
                         <h6>Payment Status : {{$item->payment_status}}</h6>
                         <h6>Payement method : {{$item->payment_method}}</h6>
-
+            
                         </div>
 
                 </div>
